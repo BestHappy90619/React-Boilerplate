@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     basicSsl()
-  ]
+  ],
+  resolve: {
+    alias: [{ find: "@", replacement: "/src" }],
+  }
 })
